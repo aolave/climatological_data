@@ -35,8 +35,7 @@ composer require ar/module-weather
 # Magento 2.4.6 Installation Guide
 
 ### Repository Public: Backup Database Repository Root: magento.sql
-- Magento: Repository Root: reqm2/src
-- Installation project: (para la instalación desde cero revisar: Task 1:) 
+Installation project: 
 - git clone https://github.com/aolave/climatological_data
 - mv climatological_data reqm2
 - mkdir -p ~/Sites 
