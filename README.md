@@ -1,7 +1,7 @@
 # Weather Module to Magento 2.4.6
 
 ### Authors
-- Adrian Robledo <adrian.olave@gmail.com>
+- Adrian Robledo 
 
 ### Package
 AR_Weather
@@ -38,6 +38,7 @@ composer require ar/module-weather
 - Magento: Repository Root: reqm2/src
 - Installation project: (para la instalación desde cero revisar: Task 1:) 
 - git clone https://github.com/aolave/climatological_data
+- mv climatological_data reqm2
 - mkdir -p ~/Sites 
 - mv reqm2 ~/Sites/magento 
 - cd ~/Sites/magento
