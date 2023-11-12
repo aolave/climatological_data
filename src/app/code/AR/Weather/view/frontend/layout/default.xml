@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="AR_Weather::css/styles.css" />
+    </head>
+    <body>
+        <referenceContainer name="header-wrapper">
+            <block class="AR\Weather\Block\Init" name="weather.init"  as="weather" after="minicart" template="AR_Weather::header/weather.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

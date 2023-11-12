@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="aro" sortOrder="999" translate="label">
+            <label>AR WEATHER | SCROLL</label>
+        </tab>
+        <section id="weather" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+            <label>Weather API</label>
+            <tab>aro</tab>
+            <resource>AR_Weather::config_ar_weather</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="settings" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Settings</label>
+                <field id="key" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>API Key</label>
+                    <comment>API Key</comment>
+                </field>
+                <field id="parameter" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>Add Parameter (Optional)</label>
+                    <comment>If the field is empty, it takes the remote address of the server.
+                        Query parameter based on which data is sent back. It could be following:
+                        || [city name: Barcelona ]
+                        || [Latitude and Longitude (Decimal degree) e.g: 48.8567,2.3508]
+                        || [US zip e.g.: 10001 ]
+                        || [UK postcode e.g: SW1 ]
+                        || [Canada postal code e.g: G2J]
+                        || [metar:metar code e.g: metar:EGLL]
+                        || [IP ADDRESSS: auto:ip]
+
+                    </comment>
+
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

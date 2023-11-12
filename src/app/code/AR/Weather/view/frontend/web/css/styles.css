@@ -1,0 +1,37 @@
+.weather-wrapper {
+    display: inline-block;
+    position: relative;
+    float: right;
+}
+
+.weather-text {
+    display: none;
+}
+
+.weather-wrapper .weather-icon {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media (min-width: 769px) {
+    .weather-wrapper {
+        margin-left: 13px;
+    }
+}
+
+/* It is left temporarily */
+.small-popup .modal-inner-wrap {
+    margin: 0 !important;
+    width: 500px !important;
+    z-index: 101 !important;
+    box-sizing: border-box !important;
+    position: absolute !important;
+    padding: 25px 20px !important;
+    transform: translate(206%, 36%) !important;
+}
+
+.modals-overlay {
+    display: none !important;
+}
+/* end */

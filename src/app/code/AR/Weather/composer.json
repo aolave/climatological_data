@@ -1,0 +1,22 @@
+{
+    "name": "ar/module-weather",
+    "description": "Módulo que ataque a alguna API del tiempo (openweathermap.org, weatherapi.com, etc.) para obtener los datos climatológicos de la ubicación actual del usuario que navega por la web",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "cesar.robledo",
+            "email": "adrian.olave@mgmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "AR\\Weather\\": ""
+        }
+    }
+}

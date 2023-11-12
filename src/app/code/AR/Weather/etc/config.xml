@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+<default>
+    <weather>
+        <general>
+            <enabled>1</enabled>
+        </general>
+        <settings>
+            <key>7263d1d06fa14d8894430804230607</key>
+            <parameter>186.86.52.87</parameter>
+        </settings>
+    </weather>
+</default>
+</config>
